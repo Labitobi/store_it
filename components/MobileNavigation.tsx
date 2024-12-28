@@ -3,8 +3,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -31,7 +29,6 @@ const MobileNavigation = ({
   ownerId,
   accountId,
   fullName,
-  avatar,
   email,
 }: Props) => {
   const [open, setOpen] = useState(false);
