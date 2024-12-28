@@ -27,15 +27,16 @@ const config: Config = {
           DEFAULT: "#3A86FF",
           dark: "#1F6F9E",
         },
-        light: {
-          "100": "#F3F4F6",
-          "200": "#E5E7EB",
-          "300": "#D1D5DB",
-        },
-        dark: {
-          "100": "#1E293B",
-          "200": "#0F172A",
-        },
+       light: {
+  				'100': '#333F4E',
+  				'200': '#A3B2C7',
+  				'300': '#F2F5F9',
+  				'400': '#F2F4F8'
+  			},
+  			dark: {
+  				'100': '#04050C',
+  				'200': '#131524'
+  			},
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

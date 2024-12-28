@@ -202,7 +202,7 @@
 
   /* Root Layout */
   .main-content {
-    @apply remove-scrollbar h-full flex-1 overflow-auto bg-light-100 px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
+    @apply remove-scrollbar h-full flex-1 overflow-auto bg-light-300 px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
   }
 
   /* Dashboard */
@@ -237,7 +237,7 @@
     @apply body-2 text-light-100/80 !important;
   }
   .empty-list {
-    @apply body-1 mt-10 text-center text-light-200 !important;
+    @apply body-1 mt-10 text-center text-gray-400 !important;
   }
 
   /* Type page */
@@ -259,13 +259,13 @@
     @apply body-2 shad-no-focus h-[52px] w-full rounded-full border px-4 shadow-drop-1 !important;
   }
   .delete-confirmation {
-    @apply text-center text-light-100 !important;
+    @apply text-center text-gray-400 !important;
   }
   .delete-file-name {
     @apply font-medium text-brand-100 !important;
   }
   .modal-cancel-button {
-    @apply h-[52px] flex-1 rounded-full bg-white text-light-100 hover:bg-transparent !important;
+    @apply h-[52px] flex-1 rounded-full bg-white text-gray-400 hover:bg-transparent !important;
   }
   .modal-submit-button {
     @apply primary-btn !mx-0 h-[52px] w-full flex-1 !important;
@@ -273,10 +273,10 @@
 
   /* ActionsModalContent */
   .file-details-thumbnail {
-    @apply !mb-1 flex items-center gap-3 rounded-xl border border-light-200/40 bg-light-400/50 p-3 !important;
+    @apply !mb-1 flex items-center gap-3 rounded-xl border-2 border-light-200/40 bg-gray-100 p-3 !important;
   }
   .file-details-label {
-    @apply body-2 w-[30%] text-light-100 !important;
+    @apply body-2 w-[30%] text-gray-400 !important;
   }
   .file-details-value {
     @apply subtitle-2 flex-1 !important;
@@ -286,7 +286,7 @@
     @apply !mt-2 space-y-2 !important;
   }
   .share-input-field {
-    @apply body-2 shad-no-focus h-[52px] w-full rounded-full border px-4 shadow-drop-1 !important;
+    @apply body-2 shad-no-focus h-[52px] w-full rounded-full border px-4 shadow-drop-light !important;
   }
   .share-remove-user {
     @apply rounded-full bg-transparent text-light-100 shadow-none hover:bg-transparent !important;
@@ -311,10 +311,10 @@
 
   /* Card */
   .file-card {
-    @apply flex cursor-pointer flex-col gap-6 rounded-[18px] bg-white p-5 shadow-sm transition-all hover:shadow-drop-3 !important;
+    @apply flex cursor-pointer flex-col gap-6 rounded-[18px] bg-white p-5 shadow-sm transition-all hover:shadow-drop-light !important;
   }
   .file-card-details {
-    @apply flex flex-col gap-2 text-light-100 !important;
+    @apply flex flex-col gap-2 !important;
   }
 
   /* Chart */
@@ -354,19 +354,21 @@
     @apply subtitle-2 mb-2 line-clamp-1 max-w-[300px] !important;
   }
 
-
-.loader {
-  width: calc(80px / cos(-45deg));
-  height: 5px;
-  background: repeating-linear-gradient(45deg,#3A86FF 0 15px,#0000 0 20px) right/200% 100%;
-  animation: r3 5s infinite linear;
-}
-@keyframes r3 {
-    100% {background-position:left}
-}
+  .loader {
+    width: calc(80px / cos(-45deg));
+    height: 5px;
+    background: repeating-linear-gradient(45deg, #3a86ff 0 15px, #0000 0 20px)
+      right/200% 100%;
+    animation: r3 5s infinite linear;
+  }
+  @keyframes r3 {
+    100% {
+      background-position: left;
+    }
+  }
 
   .error-toast {
-    @apply bg-red !rounded-[10px] !important;
+    @apply bg-brand !rounded-[10px] overflow-hidden shadow-drop-dark p-4 !important;
   }
 
   /* Header */
@@ -413,16 +415,16 @@
     @apply relative w-full md:max-w-[480px] !important;
   }
   .search-input-wrapper {
-    @apply flex h-[52px] flex-1 items-center gap-3 rounded-full px-4 shadow-drop-3 !important;
+    @apply flex h-[52px] flex-1 items-center gap-3 rounded-full px-4 shadow-drop-light !important;
   }
   .search-input {
-    @apply body-2 shad-no-focus  placeholder:body-1 w-full border-none p-0 shadow-none placeholder:text-light-200 !important;
+    @apply body-2 shad-no-focus  placeholder:body-1 w-full border-none p-0 shadow-none placeholder:text-gray-400 !important;
   }
   .search-result {
-    @apply absolute left-0 top-16 z-50 flex w-full flex-col gap-3 rounded-[20px] bg-white p-4 !important;
+    @apply absolute left-0 top-16 z-50 flex w-full flex-col gap-3 rounded-[20px]  bg-white p-4 !important;
   }
   .empty-result {
-    @apply body-2 text-center text-light-100 !important;
+    @apply body-2 text-center text-gray-400 !important;
   }
 
   /* Sidebar */
@@ -451,7 +453,7 @@
     @apply shad-no-focus h-11 w-full rounded-[8px] border-transparent bg-white !shadow-sm sm:w-[210px] !important;
   }
   .sort-select-content {
-    @apply !shadow-drop-3 !important;
+    @apply shadow-drop-dark !important;
   }
 
   /* Thumbnail */
