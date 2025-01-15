@@ -26,6 +26,11 @@ export default function RootLayout({
           name="google-adsense-account"
           content="ca-pub-1731472759771725"
         ></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1731472759771725"
+          crossorigin="anonymous"
+        ></script>
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
