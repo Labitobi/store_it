@@ -22,9 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-1731472759771725"
+        ></meta>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className={`${poppins.variable} antialiased`}>{children}<Toaster /></body>
+      <body className={`${poppins.variable} antialiased`}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
